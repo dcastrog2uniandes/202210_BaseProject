@@ -1,0 +1,30 @@
+<div class="container">
+  <p class="fst-italic fs-3" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">El aroma mágico</p>
+  <hr>
+
+  <img src="./assets/banner.jpeg" class="img-fluid" alt="...">
+
+  <table class="table table-responsive mt-4" style="width: auto;">
+    <thead class="table-dark">
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let cafe of cafes; let i=index">
+        <th scope="row">{{i+1}}</th>
+        <td> {{cafe.nombre}} </td>
+        <td> {{cafe.tipo}} </td>
+        <td> {{cafe.region}} </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div class="text-center mt-5">
+    <p><small> contact us: +57 3102105253 - info@laromamagico.com - @elaromamagico</small></p>
+  </div>
+</div>
